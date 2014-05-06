@@ -1,7 +1,6 @@
 # Read the data. The file data.txt contains only the data from 1/2/2007 
 # and 2/2/2007
 data <- read.csv("data.txt", header = TRUE, sep = ";")
-str(data)
 
 # Split the drawing panel into 2*2
 par(mfrow = c(2,2))
@@ -42,9 +41,10 @@ legend(
   "topright",
   col=c("black", "red", "blue"),
   legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
-  pch="___",
+  pch="---",
+  cex=0.9,                  # Reduce font size inside legend
   lty=2,                    # Make the lines in legend longer
-  box.col="white"           # Remove the box boundary
+  box.lwd=0,                # Remove box boundary
 )
 
 # Fourth plot
