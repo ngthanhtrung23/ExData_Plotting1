@@ -1,4 +1,5 @@
-# Read the data
+# Read the data. The file data.txt contains only the data from 1/2/2007 
+# and 2/2/2007
 data <- read.csv("data.txt", header = TRUE, sep = ";")
 str(data)
 
